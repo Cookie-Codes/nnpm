@@ -1,9 +1,20 @@
 /**
- * Used to Calculate Addition
- * @param  a First Number
- * @param  b Second Number
- * @return   Addition of Both
+ * Question to be Asked
+ *
+ * name:
+ * version:
+ * description:
+ * keywords: []
+ * homepage:
+ * bugs:
+ * license:
+ * author:
+ * files: []
+ * main: | browser
+ * bin:
+ * repository:
+ * scripts:
+ * config:
+ * dependencies:
+ * devDependencies:
  */
-export function add(a: number, b: number): number {
-    return a + b;
-}

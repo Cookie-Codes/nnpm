@@ -1,51 +1,16 @@
-# TypeScript-Jest-Node Starter
+# NNPM
 
-[![Build Status](https://travis-ci.org/al-chaudhari/yarn-ts-jest-starter.svg?branch=master)](https://travis-ci.org/al-chaudhari/yarn-ts-jest-starter)
+A Little More Verbse npm init which will Create better package.json file for
+Production Level Packages
 
-[![Coverage Status](https://coveralls.io/repos/github/al-chaudhari/yarn-ts-jest-starter/badge.svg?branch=master)](https://coveralls.io/github/al-chaudhari/yarn-ts-jest-starter?branch=master)
+Installation:
 
-**Dependencies**
-```
-yarn install
-```
-
-**Test**
-
-```
-yarn run test // Runtest
-```
-**Build And Start**
-```
-yarn run start // Build And Start
-```
-**Start Dev Server**
-```
-yarn run start:dev // Start Development Server with Nodemon
+```bash
+npm i -g nnpm
 ```
 
-**Build**
-```
-yarn run build // Rebuild
-```
+Usage:
 
-**Lint**
-
+```bash
+  nnpm # that's it
 ```
-yarn run lint
-```
-
-**format**
-```
-yarn run format
-```
-
-**doc**
-
-```
-yarn run doc
-
-```
-
-# Coverage Features
-
-It comes with Coveralls & TravisCI Configurations. Just Enable Travis Ci and Coveralls  `change your Badge`.
