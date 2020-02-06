@@ -14,9 +14,11 @@ storage.version = conformInput('version', defualts.version);
 
 storage.desc = conformInput('description', defualts.description);
 
-storage.keywords = conformInput('keywords []', defualts.keywords);
+storage.repository = conformInput('repository', defualts.repository);
 
-storage.homepage = conformInput('homepage', defualts.homepage);
+storage.keywords = conformInput('keywords', !defualts.keywords ? [] : defualts.keywords);
+
+storage.homepage = conformInput('homepage', !defualts.homepage ? storage.repository : defualts.homepage);
 
 storage.bugs = conformInput('bugs', defualts.bugs);
 
@@ -29,8 +31,6 @@ storage.files = conformInput('files []', defualts.files);
 storage.main = conformInput('main', defualts.main_browser);
 
 storage.bin = conformInput('bin', defualts.bin);
-
-storage.repository = conformInput('repository', defualts.repository);
 
 storage.config = conformInput('config', defualts.config);
 
