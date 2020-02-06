@@ -37,3 +37,5 @@ defualts.files = storage.files;
 defualts.main = storage.main;
 defualts.bin = storage.bin;
 defualts.config = storage.config;
+
+writepackage(defualts);
