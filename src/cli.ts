@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { conformInput, getDefaults, listFiles, dirname, writepackage, yes_no } from './util';
+import { conformInput, getDefaults, listFiles, dirname, writepackage, yesNo } from './util';
 const defualts = getDefaults();
 const storage: any = {};
 
@@ -16,9 +16,9 @@ storage.files = conformInput('files', !defualts.files ? listFiles() : defualts.f
 storage.build = conformInput('build Directory', 'lib');
 storage.main = conformInput('main', !defualts.main ? storage.build + '/index.js' : defualts.main);
 
-const yes_n = !!defualts.bin ? false : yes_no('is This Cli Application :');
+const yesn = !!defualts.bin ? false : yesNo('is This Cli Application :');
 
-if (yes_n) {
+if (yesn) {
     const storage: any = {};
     const name = conformInput('bin executable name');
     const file = conformInput('bin', defualts.bin);
@@ -27,7 +27,7 @@ if (yes_n) {
     defualts.bin;
 }
 
-const yes_n_type = yes_no('Do you use TypeScript');
+const yes_n_type = yesNo('Do you use TypeScript');
 
 if (yes_n_type) {
     storage.types = conformInput('main', !defualts.main ? storage.build + '/index.d.ts' : defualts.main);
