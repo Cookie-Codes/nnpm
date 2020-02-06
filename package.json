@@ -42,6 +42,7 @@
     "doc": "rimraf ./doc && typedoc"
   },
   "dependencies": {
+    "commander": "^4.1.1",
     "tscolor": "^1.0.1"
   },
   "jest": {
