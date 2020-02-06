@@ -1,4 +1,5 @@
 import { readFileSync } from 'fs';
+import * as readline from 'readline';
 export function packageExist(): boolean {
     // TODO: Check if Package Exists
 }
@@ -7,7 +8,7 @@ export function listFiles() {
     // TODO: List Files Here & Return
 }
 
-export function conformInput(prompt: string, defaultValue: any) {}
+export function conformInput(handler: readline.Interface, prompt: string, defaultValue: any) {}
 
 export function getDefaults(): any {
     let values: any = {};
