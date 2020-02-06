@@ -92,3 +92,10 @@ export function writepackage(pack: any) {
     writeFileSync('package.json', JSON.stringify(pack), 'utf-8');
     execSync('npm install  --package-lock');
 }
+
+export function keywordSolver(value: string | Array<string>) {
+    if (typeof value === 'string') {
+        return value.split(' ');
+    }
+    return value;
+}
