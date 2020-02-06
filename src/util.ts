@@ -24,6 +24,7 @@ export function conformInput(prompt: string, defaults?: any): any {
     prompt = prompt + ' :';
 
     while (!answer.length) {
+        // BUG: after prompt there is no return
         if (!!negated && !once) {
             prompt = warning.toString() + prompt + '\x1b[0m';
             once = true;
