@@ -14,7 +14,7 @@ const defualts = getDefaults();
 
 const storage: any = {};
 
-rl.question(`name [${defualts.name}]`, answer => {
+rl.question('name', answer => {
     storage.name = answer;
 });
 
