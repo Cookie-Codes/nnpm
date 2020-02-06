@@ -21,17 +21,20 @@ export function conformInput(prompt: string, defaults?: any): any {
     let answer: string | Array<string> = '';
     let negated = false;
     let once = false;
-
+    prompt = prompt + ' :';
     prompt = askString(prompt, defaults);
 
-    while (!answer.length && !defaults) {
+    while (!answer.length) {
         if (!!negated && !once) {
             prompt = warning.toString() + prompt;
             once = true;
         }
         answer = readline.question(prompt);
 
-        if (!defaults.length && !answer.length) {
+        if (!answer.length && !!defaults) {
+            return defaults;
+        }
+        if (!defaults && !answer.length) {
             negated = true;
         }
     }
