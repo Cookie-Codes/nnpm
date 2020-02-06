@@ -18,7 +18,7 @@ rl.question(askString('name', defualts.name), answer => {
     storage.name = answer;
 });
 
-rl.question(askString('version', defualts.), answer => {
+rl.question(askString('version', defualts), answer => {
     storage.version = answer;
 });
 
