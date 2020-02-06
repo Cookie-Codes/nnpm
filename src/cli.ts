@@ -7,7 +7,7 @@ const storage: any = {};
 
 storage.name = conformInput('name', !defualts.name ? dirname() : defualts.name);
 
-storage.version = conformInput('version', defualts.version);
+storage.version = conformInput('version', !defualts.version ? '0.0.1' : defualts.version);
 
 storage.desc = conformInput('description', defualts.description);
 
@@ -31,6 +31,7 @@ storage.main = conformInput('main', defualts.main);
 
 storage.types = conformInput('main', defualts.main);
 
+// TODO: add recursive bin handlers
 storage.bin = conformInput('bin', defualts.bin);
 
 storage.config = conformInput('config', defualts.config);
