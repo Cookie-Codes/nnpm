@@ -2,7 +2,7 @@
  * Main Cli File
  */
 
-import { conformInput, getDefaults } from './util';
+import { conformInput, getDefaults, listFiles } from './util';
 
 const defualts = getDefaults();
 
@@ -26,7 +26,7 @@ storage.license = conformInput('license', !defualts.license ? 'MIT' : defualts.l
 
 storage.author = conformInput('author', !defualts.author ? storage.repository.split('/')[3] : defualts.author);
 
-storage.files = conformInput('files []', !defualts.files ?  :);
+storage.files = conformInput('files []', !defualts.files ? listFiles() : defualts.files);
 
 storage.main = conformInput('main', defualts.main);
 

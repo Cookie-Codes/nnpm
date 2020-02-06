@@ -1,4 +1,4 @@
-import { readFileSync, existsSync } from 'fs';
+import { readFileSync, existsSync, readdirSync } from 'fs';
 import * as readline from 'readline-sync';
 import { Terminal } from 'tscolor';
 
@@ -12,7 +12,9 @@ export function packageExist(): boolean {
     return existsSync('package.json');
 }
 
-export function listFiles() {}
+export function listFiles() {
+    return readdirSync('.');
+}
 
 export function conformInput(prompt: string, defaults?: any): any {
     let answer: string | Array<string> = '';
