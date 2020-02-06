@@ -20,15 +20,17 @@ storage.keywords = conformInput('keywords', !defualts.keywords ? [] : defualts.k
 
 storage.homepage = conformInput('homepage', !defualts.homepage ? storage.repository : defualts.homepage);
 
-storage.bugs = conformInput('bugs', defualts.bugs);
+storage.bugs = conformInput('bugs', !defualts.bugs ? storage.repository + '/issues' : defualts.bugs);
 
-storage.license = conformInput('license', defualts.license);
+storage.license = conformInput('license', !defualts.license ? 'MIT' : defualts.license);
 
 storage.author = conformInput('author', defualts.author);
 
 storage.files = conformInput('files []', defualts.files);
 
-storage.main = conformInput('main', defualts.main_browser);
+storage.main = conformInput('main', defualts.main);
+
+storage.types = conformInput('main', defualts.main);
 
 storage.bin = conformInput('bin', defualts.bin);
 
