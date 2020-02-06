@@ -56,6 +56,11 @@ rl.question('version', answer=>{
 });
 
 
+rl.question('main: | browser', answer=>{
+  storage.version = answer;
+});
+
+
 :
 :
 :
@@ -63,7 +68,7 @@ rl.question('version', answer=>{
 :
 :
 
-main: | browser
+
 bin:
 repository:
 config:
