@@ -1,13 +1,7 @@
 # NNPM
 
 A Little More Verbse npm init which will Create better package.json file for
-Production Level Packages
-
-Installation:
-
-```bash
-npm i -g nnpm
-```
+Production Level Packages.
 
 ## Usage:
 
@@ -18,18 +12,10 @@ For new existing package.json
   nnpm # that's it
 ```
 
-## What it Checks
+Installation:
 
-1. name:
-2. version:
-3. description:
-4. keywords: []
-5. homepage:
-6. bugs:
-7. license:
-8. author:
-9. files: []
-10. main: | browser
-11. bin:
-12. repository:
-13. config:
+```bash
+npm i -g nnpm
+```
+
+[![nnpm gif](https://media.giphy.com/media/duEXHKHpGbCzKyZNfU/giphy.gif)](https://youtu.be/nvem5o5NkyY)
