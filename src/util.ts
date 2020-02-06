@@ -17,6 +17,29 @@ export function listFiles() {
     return readdirSync('.');
 }
 
+export function yes_no(prompt: string) {
+    let answer = '';
+    let negated = false;
+    let once = false;
+    const answered = false;
+    while (!answered) {
+        if (!!negated && !once) {
+            prompt = warning.toString() + prompt + '\x1b[0m';
+            once = true;
+        }
+        answer = readline.question(prompt);
+
+        if (answer === 'y') {
+            return true;
+        } else if (answer == 'n') {
+            return false;
+        } else {
+            negated = true;
+            prompt = prompt + '(specify y or n)';
+        }
+    }
+}
+
 export function conformInput(prompt: string, defaults?: any): any {
     let answer: string | Array<string> = '';
     let negated = false;
