@@ -14,9 +14,7 @@ const defualts = getDefaults();
 
 const storage: any = {};
 
-rl.question(askString('name', defualts.name), answer => {
-    storage.name = answer;
-});
+conformInput(rl, askString('name', defualts.name), storage.name);
 
 rl.question(askString('version', defualts.version), answer => {
     storage.version = answer;
