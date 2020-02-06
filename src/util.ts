@@ -67,7 +67,6 @@ export function dirname() {
 }
 
 export function writepackage(pack: any) {
-    // TODO: Forgot to open file ha ha
     writeFileSync('package.json', JSON.stringify(pack), 'utf-8');
     execSync('npm install  --package-lock');
 }
