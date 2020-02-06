@@ -13,7 +13,7 @@ storage.desc = conformInput('description', defualts.description);
 
 storage.repository = conformInput('repository', defualts.repository);
 
-storage.keywords = conformInput('keywords', !defualts.keywords ? [] : defualts.keywords);
+storage.keywords = conformInput('keywords (space seperated)', !defualts.keywords ? [] : defualts.keywords);
 
 storage.homepage = conformInput('homepage', !defualts.homepage ? storage.repository : defualts.homepage);
 
