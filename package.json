@@ -1,17 +1,18 @@
 {
-    "name": "yarn-ts-starter",
+    "name": "nnpm",
     "version": "1.0.0",
-    "description": "Start For Me",
+    "description": "nnpm way of npm init kind of slightly verbose",
     "main": "build/index.js",
     "keywords": [
-        "Terminal"
+        "Terminal",
+        "npm init"
     ],
     "bin": {
         "nnpm": "./build/cli.js"
     },
     "types": "build/index.d.ts",
     "author": "Akash Chaudhari",
-    "license": "ISC",
+    "license": "MIT",
     "devDependencies": {
         "@babel/core": "^7.7.7",
         "@babel/preset-env": "^7.7.7",
