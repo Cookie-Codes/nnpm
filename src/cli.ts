@@ -3,7 +3,7 @@
  */
 
 import * as readline from 'readline';
-import { packageExist, listFiles, conformInput, getDefaults } from './util';
+import { packageExist, listFiles, conformInput, getDefaults, askString } from './util';
 
 const rl = readline.createInterface({
     input: process.stdin,
