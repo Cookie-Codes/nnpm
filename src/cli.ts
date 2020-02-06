@@ -20,8 +20,6 @@ storage.main = conformInput('main', !defualts.main ? storage.build + '/index.js'
 // TODO: add yes no handler
 // TODO: add recursive bin handlers
 storage.bin = conformInput('bin', defualts.bin);
-// storage.config = conformInput('config', defualts.config);
-
 // Setting configs;
 
 defualts.name = storage.name;
@@ -36,6 +34,5 @@ defualts.author = storage.author;
 defualts.files = storage.files;
 defualts.main = storage.main;
 defualts.bin = storage.bin;
-// defualts.config = storage.config;
 
 writepackage(defualts);
