@@ -17,3 +17,20 @@ const storage: any = {};
 rl.question(`name [${defualts.name}]`, answer => {
     storage.name = answer;
 });
+
+rl.question('version', answer=>{
+  storage.version = answer;
+});
+
+:
+description:
+keywords: []
+homepage:
+bugs:
+license:
+author:
+files: []
+main: | browser
+bin:
+repository:
+config:
