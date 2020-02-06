@@ -19,16 +19,19 @@ export function listFiles() {
 
 export function conformInput(handler: readline.Interface, prompt: string): any {
     let answer: string | Array<string> = '';
-    const negated = false;
+    let negated = false;
     let once = false;
 
-    while (!!answer.length) {
-        if (negated && !once) {
+    while (!answer.length) {
+        if (!!negated && !once) {
             prompt = warning.toString() + prompt;
             once = true;
         }
         handler.question(prompt, ans => {
             answer = ans;
+            if (!prompt.length && !answer.length) {
+                negated = true;
+            }
         });
     }
 }
