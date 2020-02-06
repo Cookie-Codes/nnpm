@@ -54,7 +54,7 @@ rl.question(askString('bugs', defualts.keywords)'version', answer => {
     storage.version = answer;
 });
 
-rl.question(askString('bugs', defualts.keywords)'main: | browser', answer => {
+rl.question(askString('main | browser', defualts.keywords), answer => {
     storage.version = answer;
 });
 
