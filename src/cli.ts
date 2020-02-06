@@ -16,7 +16,7 @@ storage.files = conformInput('files', !defualts.files ? listFiles() : defualts.f
 storage.build = conformInput('build Directory', 'lib');
 storage.main = conformInput('main', !defualts.main ? storage.build + '/index.js' : defualts.main);
 
-const yesn = !!defualts.bin ? false : yesNo('is This Cli Application :');
+const yesn = !!defualts.bin ? false : yesNo('is This Cli Application(Specify y or n) : ');
 
 if (yesn) {
     const storage: any = {};
@@ -27,7 +27,7 @@ if (yesn) {
     defualts.bin;
 }
 
-const yesnType = yesNo('Do you use TypeScript');
+const yesnType = yesNo('Do you use TypeScript(Specify y or n) : ');
 
 if (yesnType) {
     storage.types = conformInput('main', !defualts.main ? storage.build + '/index.d.ts' : defualts.main);
