@@ -26,7 +26,7 @@ rl.question(askString('description', defualts.version), answer => {
     storage.version = answer;
 });
 
-rl.question(askString('', defualts.version),, answer => {
+rl.question(askString('keywords []', defualts.version),, answer => {
     storage.version = answer;
 });
 
@@ -38,15 +38,15 @@ rl.question(askString('bugs', defualts.keywords), answer => {
     storage.version = answer;
 });
 
-rl.question(askString('bugs', defualts.keywords), answer => {
+rl.question(askString('license', defualts.keywords), answer => {
     storage.version = answer;
 });
 
-rl.question(askString('bugs', defualts.keywords)'author', answer => {
+rl.question(askString('author', defualts.keywords), answer => {
     storage.version = answer;
 });
 
-rl.question(askString('files', defualts.keywords), answer => {
+rl.question(askString('files []', defualts.keywords), answer => {
     storage.version = answer;
 });
 
