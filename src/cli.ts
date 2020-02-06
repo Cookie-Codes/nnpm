@@ -22,9 +22,42 @@ rl.question('version', answer=>{
   storage.version = answer;
 });
 
+rl.question('description', answer=>{
+  storage.version = answer;
+});
+
+rl.question('keywords []', answer=>{
+  storage.version = answer;
+});
+
+rl.question('version', answer=>{
+  storage.version = answer;
+});
+
+rl.question('version', answer=>{
+  storage.version = answer;
+});
+
+rl.question('version', answer=>{
+  storage.version = answer;
+});
+
+rl.question('version', answer=>{
+  storage.version = answer;
+});
+
+
+rl.question('version', answer=>{
+  storage.version = answer;
+});
+
+rl.question('version', answer=>{
+  storage.version = answer;
+});
+
+
 :
-description:
-keywords: []
+:
 homepage:
 bugs:
 license:
