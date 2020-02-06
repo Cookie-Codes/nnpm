@@ -17,3 +17,5 @@ Installation:
 ```bash
 npm i -g ainit
 ```
+
+[![nnpm gif](https://media.giphy.com/media/duEXHKHpGbCzKyZNfU/giphy.gif)](https://youtu.be/nvem5o5NkyY)
