@@ -43,7 +43,8 @@
   },
   "dependencies": {
     "all-node-versions": "^6.0.0",
-    "tscolor": "^1.0.1"
+    "tscolor": "^1.0.1",
+    "yargs": "^15.1.0"
   },
   "jest": {
     "roots": [
