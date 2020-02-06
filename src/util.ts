@@ -1,7 +1,7 @@
-function packageExist() {
+export function packageExist() {
     // TODO: Check if Package Exists
 }
 
-function listFiles() {
+export function listFiles() {
     // TODO: List Files Here & Return
 }
