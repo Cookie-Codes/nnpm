@@ -42,7 +42,6 @@
     "doc": "rimraf ./doc && typedoc"
   },
   "dependencies": {
-    "all-node-versions": "^6.0.0",
     "tscolor": "^1.0.1"
   },
   "jest": {
