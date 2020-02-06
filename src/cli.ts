@@ -14,27 +14,27 @@ const defualts = getDefaults();
 
 const storage: any = {};
 
-rl.question('name', answer => {
+rl.question(askString('name', defualts.name), answer => {
     storage.name = answer;
 });
 
-rl.question('version', answer => {
+rl.question(askString('version', defualts.), answer => {
     storage.version = answer;
 });
 
-rl.question('description', answer => {
+rl.question(askString('description', defualts.version), answer => {
     storage.version = answer;
 });
 
-rl.question('keywords []', answer => {
+rl.question(askString('', defualts.version),, answer => {
     storage.version = answer;
 });
 
-rl.question('homepage', answer => {
+rl.question(askString('homepage', defualts.keywords), answer => {
     storage.version = answer;
 });
 
-rl.question('bugs', answer => {
+rl.question(askString('bugs', defualts.keywords), answer => {
     storage.version = answer;
 });
 
