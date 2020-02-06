@@ -29,8 +29,6 @@ storage.build = conformInput('build Directory', 'lib');
 
 storage.main = conformInput('main', defualts.main);
 
-storage.types = conformInput('main', defualts.main);
-
 // TODO: add recursive bin handlers
 storage.bin = conformInput('bin', defualts.bin);
 
