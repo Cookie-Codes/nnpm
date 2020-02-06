@@ -28,7 +28,9 @@ storage.author = conformInput('author', !defualts.author ? storage.repository.sp
 
 storage.files = conformInput('files', !defualts.files ? listFiles() : defualts.files);
 
-storage.build = storage.main = conformInput('main', defualts.main);
+storage.build = conformInput('build Directory', 'lib');
+
+storage.main = conformInput('main', defualts.main);
 
 storage.types = conformInput('main', defualts.main);
 
