@@ -42,7 +42,7 @@ rl.question('license', answer=>{
   storage.version = answer;
 });
 
-rl.question('version', answer=>{
+rl.question('author', answer=>{
   storage.version = answer;
 });
 
@@ -61,7 +61,7 @@ rl.question('version', answer=>{
 :
 :
 :
-author:
+:
 files: []
 main: | browser
 bin:
