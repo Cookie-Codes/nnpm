@@ -16,54 +16,28 @@ const storage: any = {};
 
 conformInput(rl, askString('name', defualts.name));
 
-rl.question(askString('version', defualts.version), answer => {
-    storage.version = answer;
-});
+conformInput(rl, askString('version', defualts.version));
 
-rl.question(askString('description', defualts.description), answer => {
-    storage.version = answer;
-});
+conformInput(rl, askString('description', defualts.description));
 
-rl.question(askString('keywords []', defualts.keywords), answer => {
-    storage.version = answer;
-});
+conformInput(rl, askString('keywords []', defualts.keywords));
 
-rl.question(askString('homepage', defualts.homepage), answer => {
-    storage.version = answer;
-});
+conformInput(rl, askString('homepage', defualts.homepage));
 
-rl.question(askString('bugs', defualts.bugs), answer => {
-    storage.version = answer;
-});
+conformInput(rl, askString('bugs', defualts.bugs));
 
-rl.question(askString('license', defualts.license), answer => {
-    storage.version = answer;
-});
+conformInput(rl, askString('license', defualts.license));
 
-rl.question(askString('author', defualts.author), answer => {
-    storage.version = answer;
-});
+conformInput(rl, askString('author', defualts.author));
 
-rl.question(askString('files []', defualts.files), answer => {
-    storage.version = answer;
-});
+conformInput(rl, askString('files []', defualts.files));
 
-rl.question(askString('version', defualts.version), answer => {
-    storage.version = answer;
-});
+conformInput(rl, askString('version', defualts.version));
 
-rl.question(askString('main | browser', defualts.main_browser), answer => {
-    storage.version = answer;
-});
+conformInput(rl, askString('main | browser', defualts.main_browser));
 
-rl.question(askString('bin', defualts.bin), answer => {
-    storage.version = answer;
-});
+conformInput(rl, askString('bin', defualts.bin));
 
-rl.question(askString('repository', defualts.repository), answer => {
-    storage.version = answer;
-});
+conformInput(rl, askString('repository', defualts.repository));
 
-rl.question(askString('config', defualts.config), answer => {
-    storage.version = answer;
-});
+conformInput(rl, askString('config', defualts.config));
