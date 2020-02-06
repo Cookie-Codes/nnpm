@@ -27,7 +27,7 @@ storage.files = conformInput('files', !defualts.files ? listFiles() : defualts.f
 
 storage.build = conformInput('build Directory', 'lib');
 
-storage.main = conformInput('main', defualts.main);
+storage.main = conformInput('main', !defualts.main ? storage.build + '/index.js' : defualts.main);
 
 // TODO: add recursive bin handlers
 storage.bin = conformInput('bin', defualts.bin);
