@@ -60,15 +60,25 @@ rl.question('main: | browser', answer=>{
   storage.version = answer;
 });
 
+rl.question('bin', answer=>{
+  storage.version = answer;
+});
+
+rl.question('repository', answer=>{
+  storage.version = answer;
+});
+
+rl.question('config', answer=>{
+  storage.version = answer;
+});
+:
+:
+:
+:
+:
+:
+
 
 :
 :
 :
-:
-:
-:
-
-
-bin:
-repository:
-config:
