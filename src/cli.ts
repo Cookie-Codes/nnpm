@@ -20,12 +20,11 @@ storage.main = conformInput('main', !defualts.main ? storage.build + '/index.js'
 const yesn = !!defualts.bin ? false : yesNo('is This Cli Application(Specify y or n) : ');
 
 if (yesn) {
-    const storage: any = {};
+    const st: any = {};
     const name = conformInput('bin executable name');
     const file = conformInput('bin file', defualts.bin);
-    storage[name + ''] = file;
-    storage.bin = storage;
-    defualts.bin = storage.bin;
+    st[name + ''] = file;
+    defualts.bin = st;
 }
 
 const yesnType = yesNo('Do you use TypeScript(Specify y or n) : ');
@@ -38,11 +37,11 @@ defualts.name = storage.name;
 defualts.version = storage.version;
 defualts.description = storage.desc;
 defualts.repository = storage.repository;
-// defualts.keywords = !defualts.keywords
-//     ? storage.keywords == []
-//         ? []
-//         : storage.keywords.split(' ')
-//     : defualts.keywords;
+defualts.keywords = !defualts.keywords
+    ? storage.keywords == []
+        ? []
+        : storage.keywords.split(' ')
+    : defualts.keywords;
 defualts.homepage = storage.homepage;
 defualts.bugs = storage.bugs;
 defualts.license = storage.license;
