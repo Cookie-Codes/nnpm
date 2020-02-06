@@ -8,7 +8,7 @@ export function listFiles() {
 
 export function conformInput(prompt: string, defaultValue: any) {}
 
-export function getDefaults() {
+export function getDefaults(): any {
     // TODO: Get Default values
 }
 
