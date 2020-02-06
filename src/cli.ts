@@ -47,7 +47,7 @@ rl.question('author', answer=>{
 });
 
 
-rl.question('version', answer=>{
+rl.question('files: []', answer=>{
   storage.version = answer;
 });
 
@@ -62,7 +62,7 @@ rl.question('version', answer=>{
 :
 :
 :
-files: []
+
 main: | browser
 bin:
 repository:
