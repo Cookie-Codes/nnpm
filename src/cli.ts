@@ -43,7 +43,7 @@ defualts.homepage = storage.homepage;
 defualts.bugs = storage.bugs;
 defualts.license = storage.license;
 defualts.author = storage.author;
-defualts.files = storage.files;
+defualts.files = keywordSolver(storage.files);
 defualts.main = storage.main;
 
 console.log(defualts);
