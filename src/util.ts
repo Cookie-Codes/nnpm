@@ -26,7 +26,7 @@ export function conformInput(prompt: string, defaults?: any): any {
 
     while (!answer.length) {
         if (!!negated && !once) {
-            prompt = warning.toString() + prompt;
+            prompt = warning.toString() + prompt + '\x1b[0m';
             once = true;
         }
         answer = readline.question(prompt);
@@ -38,6 +38,8 @@ export function conformInput(prompt: string, defaults?: any): any {
             negated = true;
         }
     }
+
+    return answer;
 }
 
 export function getDefaults(): any {
