@@ -17,7 +17,7 @@ export function listFiles() {
     return readdirSync('.');
 }
 
-export function yes_no(prompt: string) {
+export function yesNo(prompt: string) {
     let answer = '';
     let negated = false;
     let once = false;
