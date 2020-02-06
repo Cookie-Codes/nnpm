@@ -24,9 +24,9 @@ storage.bugs = conformInput('bugs', !defualts.bugs ? storage.repository + '/issu
 
 storage.license = conformInput('license', !defualts.license ? 'MIT' : defualts.license);
 
-storage.author = conformInput('author', defualts.author);
+storage.author = conformInput('author', !defualts.author ? storage.repository.split('/')[3] : defualts.author);
 
-storage.files = conformInput('files []', defualts.files);
+storage.files = conformInput('files []', !defualts.files ?  :);
 
 storage.main = conformInput('main', defualts.main);
 
