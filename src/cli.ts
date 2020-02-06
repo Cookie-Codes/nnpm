@@ -38,34 +38,34 @@ rl.question(askString('bugs', defualts.keywords), answer => {
     storage.version = answer;
 });
 
-rl.question('license', answer => {
+rl.question(askString('bugs', defualts.keywords), answer => {
     storage.version = answer;
 });
 
-rl.question('author', answer => {
+rl.question(askString('bugs', defualts.keywords)'author', answer => {
     storage.version = answer;
 });
 
-rl.question('files: []', answer => {
+rl.question(askString('bugs', defualts.keywords)'files: []', answer => {
     storage.version = answer;
 });
 
-rl.question('version', answer => {
+rl.question(askString('bugs', defualts.keywords)'version', answer => {
     storage.version = answer;
 });
 
-rl.question('main: | browser', answer => {
+rl.question(askString('bugs', defualts.keywords)'main: | browser', answer => {
     storage.version = answer;
 });
 
-rl.question('bin', answer => {
+rl.question(askString('bugs', defualts.keywords)'bin', answer => {
     storage.version = answer;
 });
 
-rl.question('repository', answer => {
+rl.question(askString('bugs', defualts.keywords)'repository', answer => {
     storage.version = answer;
 });
 
-rl.question('config', answer => {
+rl.question(askString('config', defualts.keywords), answer => {
     storage.version = answer;
 });
