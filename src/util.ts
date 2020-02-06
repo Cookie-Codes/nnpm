@@ -22,7 +22,9 @@ export function conformInput(prompt: string, defaults?: any): any {
     let negated = false;
     let once = false;
 
-    while (!answer.length) {
+    prompt = askString(prompt, defaults);
+
+    while (!answer.length && !defaults) {
         if (!!negated && !once) {
             prompt = warning.toString() + prompt;
             once = true;

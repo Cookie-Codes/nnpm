@@ -2,36 +2,36 @@
  * Main Cli File
  */
 
-import { listFiles, conformInput, getDefaults } from './util';
+import { conformInput, getDefaults } from './util';
 
 const defualts = getDefaults();
 
 const storage: any = {};
 
-conformInput('name', defualts.name);
+storage.name = conformInput('name', defualts.name);
 
-conformInput('version', defualts.version);
+storage.version = conformInput('version', defualts.version);
 
-conformInput('description', defualts.description);
+storage.desc = conformInput('description', defualts.description);
 
-conformInput('keywords []', defualts.keywords);
+storage.keywords = conformInput('keywords []', defualts.keywords);
 
-conformInput('homepage', defualts.homepage);
+storage.homepage = conformInput('homepage', defualts.homepage);
 
-conformInput('bugs', defualts.bugs);
+storage.bugs = conformInput('bugs', defualts.bugs);
 
-conformInput('license', defualts.license);
+storage.license = conformInput('license', defualts.license);
 
-conformInput('author', defualts.author);
+storage.author = conformInput('author', defualts.author);
 
-conformInput('files []', defualts.files);
+storage.files = conformInput('files []', defualts.files);
 
-conformInput('version', defualts.version);
+storage.main = conformInput('main', defualts.main_browser);
 
-conformInput('main | browser', defualts.main_browser);
+storage.bin = conformInput('bin', defualts.bin);
 
-conformInput('bin', defualts.bin);
+storage.repository = conformInput('repository', defualts.repository);
 
-conformInput('repository', defualts.repository);
+storage.config = conformInput('config', defualts.config);
 
-conformInput('config', defualts.config);
+console.log(storage);
