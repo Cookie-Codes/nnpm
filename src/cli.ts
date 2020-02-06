@@ -1,7 +1,4 @@
-/**
- * Main Cli File
- */
-
+#!/usr/bin/env node
 import { conformInput, getDefaults, listFiles } from './util';
 
 const defualts = getDefaults();
