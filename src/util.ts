@@ -9,6 +9,14 @@ const warning = terminal
     .bold()
     .withhex('#ff0000');
 
+export function askString(question: string, defualt?: string): string {
+    if (!!defualt) {
+        return question + `[${defualt}]`;
+    } else {
+        return question;
+    }
+}
+
 export function packageExist(): boolean {
     return existsSync('package.json');
 }
@@ -73,14 +81,6 @@ export function getDefaults(): any {
         return values;
     } else {
         return values;
-    }
-}
-
-export function askString(question: string, defualt?: string): string {
-    if (!!defualt) {
-        return question + `[${defualt}]`;
-    } else {
-        return question;
     }
 }
 
