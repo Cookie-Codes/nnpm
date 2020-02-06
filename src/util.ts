@@ -5,3 +5,5 @@ export function packageExist() {
 export function listFiles() {
     // TODO: List Files Here & Return
 }
+
+export function conformInput(prompt: string, defaultValue: any) {}
