@@ -1,11 +1,11 @@
 #!/usr/bin/env node
-import { conformInput, getDefaults, listFiles } from './util';
+import { conformInput, getDefaults, listFiles, dirname } from './util';
 
 const defualts = getDefaults();
 
 const storage: any = {};
 
-storage.name = conformInput('name', defualts.name);
+storage.name = conformInput('name', !defualts.name ? dirname() : defualts.name);
 
 storage.version = conformInput('version', defualts.version);
 
