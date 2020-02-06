@@ -1,76 +1,76 @@
 {
-  "name": "nnpm",
-  "version": "1.0.0",
-  "description": "nnpm way of npm init kind of slightly verbose",
-  "main": "build/index.js",
-  "keywords": [
-    "Terminal",
-    "npm init"
-  ],
-  "bin": {
-    "nnpm": "./build/cli.js"
-  },
-  "types": "build/index.d.ts",
-  "author": "Akash Chaudhari",
-  "license": "MIT",
-  "devDependencies": {
-    "@babel/core": "^7.7.7",
-    "@babel/preset-env": "^7.7.7",
-    "@babel/preset-typescript": "^7.7.7",
-    "@types/jest": "^24.9.1",
-    "@typescript-eslint/eslint-plugin": "^2.17.0",
-    "@typescript-eslint/parser": "^2.17.0",
-    "babel-jest": "^24.9.0",
-    "coveralls": "^3.0.9",
-    "eslint": "^6.8.0",
-    "eslint-config-prettier": "^6.9.0",
-    "eslint-plugin-prettier": "^3.1.2",
-    "jest": "^24.9.0",
-    "nodemon": "^2.0.2",
-    "prettier": "^1.19.1",
-    "rimraf": "^3.0.0",
-    "ts-jest": "^24.3.0",
-    "ts-node": "^8.5.4",
-    "tslint-config-prettier": "^1.18.0",
-    "typedoc": "^0.16.9",
-    "typescript": "^3.7.4"
-  },
-  "scripts": {
-    "test": "jest",
-    "test:coveralls": "jest --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage",
-    "start": "npm run build && node build/index.js",
-    "start:dev": "nodemon",
-    "build": "rimraf ./build && tsc && npm run lint",
-    "lint": "tsc --noEmit && eslint \"**/*.ts\" --quiet --fix",
-    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
-    "doc": "rimraf ./doc && typedoc"
-  },
-  "dependencies": {
-    "@types/readline-sync": "^1.4.3",
-    "readline-sync": "^1.4.10",
-    "tscolor": "^1.0.1"
-  },
-  "jest": {
-    "roots": [
-      "<rootDir>/src/test"
+    "name": "start",
+    "version": "1.0.0",
+    "description": "nnpm way of npm init kind of slightly verbose",
+    "main": "build/index.js",
+    "keywords": [
+        "Terminal",
+        "npm init"
     ],
-    "testMatch": [
-      "**/__tests__/**/*.+(ts|tsx|js)",
-      "**/?(*.)+(spec|test).+(ts|tsx|js)"
-    ],
-    "transform": {
-      "^.+\\.(ts|tsx)$": "ts-jest"
+    "bin": {
+        "nnpm": "./build/cli.js"
     },
-    "clearMocks": true,
-    "coverageDirectory": "coverage",
-    "testEnvironment": "node"
-  },
-  "files": [
-    "LICENSE",
-    "Readme.md",
-    "build/"
-  ],
-  "repository": "https://github.com/al-chaudhari/nnpm",
-  "homepage": "https://github.com/al-chaudhari/nnpm",
-  "bugs": "https://github.com/al-chaudhari/nnpm/issues"
+    "types": "build/index.d.ts",
+    "author": "Akash Chaudhari",
+    "license": "MIT",
+    "devDependencies": {
+        "@babel/core": "^7.7.7",
+        "@babel/preset-env": "^7.7.7",
+        "@babel/preset-typescript": "^7.7.7",
+        "@types/jest": "^24.9.1",
+        "@typescript-eslint/eslint-plugin": "^2.17.0",
+        "@typescript-eslint/parser": "^2.17.0",
+        "babel-jest": "^24.9.0",
+        "coveralls": "^3.0.9",
+        "eslint": "^6.8.0",
+        "eslint-config-prettier": "^6.9.0",
+        "eslint-plugin-prettier": "^3.1.2",
+        "jest": "^24.9.0",
+        "nodemon": "^2.0.2",
+        "prettier": "^1.19.1",
+        "rimraf": "^3.0.0",
+        "ts-jest": "^24.3.0",
+        "ts-node": "^8.5.4",
+        "tslint-config-prettier": "^1.18.0",
+        "typedoc": "^0.16.9",
+        "typescript": "^3.7.4"
+    },
+    "scripts": {
+        "test": "jest",
+        "test:coveralls": "jest --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage",
+        "start": "npm run build && node build/index.js",
+        "start:dev": "nodemon",
+        "build": "rimraf ./build && tsc && npm run lint",
+        "lint": "tsc --noEmit && eslint \"**/*.ts\" --quiet --fix",
+        "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+        "doc": "rimraf ./doc && typedoc"
+    },
+    "dependencies": {
+        "@types/readline-sync": "^1.4.3",
+        "readline-sync": "^1.4.10",
+        "tscolor": "^1.0.1"
+    },
+    "jest": {
+        "roots": [
+            "<rootDir>/src/test"
+        ],
+        "testMatch": [
+            "**/__tests__/**/*.+(ts|tsx|js)",
+            "**/?(*.)+(spec|test).+(ts|tsx|js)"
+        ],
+        "transform": {
+            "^.+\\.(ts|tsx)$": "ts-jest"
+        },
+        "clearMocks": true,
+        "coverageDirectory": "coverage",
+        "testEnvironment": "node"
+    },
+    "files": [
+        "LICENSE",
+        "Readme.md",
+        "build/"
+    ],
+    "repository": "https://github.com/al-chaudhari/nnpm",
+    "homepage": "https://github.com/al-chaudhari/nnpm",
+    "bugs": "https://github.com/al-chaudhari/nnpm/issues"
 }
