@@ -26,9 +26,9 @@ storage.license = conformInput('license', !defualts.license ? 'MIT' : defualts.l
 
 storage.author = conformInput('author', !defualts.author ? storage.repository.split('/')[3] : defualts.author);
 
-storage.files = conformInput('files []', !defualts.files ? listFiles() : defualts.files);
+storage.files = conformInput('files', !defualts.files ? listFiles() : defualts.files);
 
-storage.main = conformInput('main', defualts.main);
+storage.build = storage.main = conformInput('main', defualts.main);
 
 storage.types = conformInput('main', defualts.main);
 
