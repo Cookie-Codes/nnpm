@@ -42,6 +42,8 @@
     "doc": "rimraf ./doc && typedoc"
   },
   "dependencies": {
+    "@types/readline-sync": "^1.4.3",
+    "readline-sync": "^1.4.10",
     "tscolor": "^1.0.1"
   },
   "jest": {

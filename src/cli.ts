@@ -2,42 +2,36 @@
  * Main Cli File
  */
 
-import * as readline from 'readline';
 import { packageExist, listFiles, conformInput, getDefaults, askString } from './util';
-
-const rl = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout,
-});
 
 const defualts = getDefaults();
 
 const storage: any = {};
 
-conformInput(rl, askString('name', defualts.name));
+conformInput(askString('name', defualts.name));
 
-conformInput(rl, askString('version', defualts.version));
+conformInput(askString('version', defualts.version));
 
-conformInput(rl, askString('description', defualts.description));
+conformInput(askString('description', defualts.description));
 
-conformInput(rl, askString('keywords []', defualts.keywords));
+conformInput(askString('keywords []', defualts.keywords));
 
-conformInput(rl, askString('homepage', defualts.homepage));
+conformInput(askString('homepage', defualts.homepage));
 
-conformInput(rl, askString('bugs', defualts.bugs));
+conformInput(askString('bugs', defualts.bugs));
 
-conformInput(rl, askString('license', defualts.license));
+conformInput(askString('license', defualts.license));
 
-conformInput(rl, askString('author', defualts.author));
+conformInput(askString('author', defualts.author));
 
-conformInput(rl, askString('files []', defualts.files));
+conformInput(askString('files []', defualts.files));
 
-conformInput(rl, askString('version', defualts.version));
+conformInput(askString('version', defualts.version));
 
-conformInput(rl, askString('main | browser', defualts.main_browser));
+conformInput(askString('main | browser', defualts.main_browser));
 
-conformInput(rl, askString('bin', defualts.bin));
+conformInput(askString('bin', defualts.bin));
 
-conformInput(rl, askString('repository', defualts.repository));
+conformInput(askString('repository', defualts.repository));
 
-conformInput(rl, askString('config', defualts.config));
+conformInput(askString('config', defualts.config));

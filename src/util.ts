@@ -1,5 +1,5 @@
 import { readFileSync } from 'fs';
-import * as readline from 'readline';
+import * as readline from 'readline-sync';
 import { Terminal } from 'tscolor';
 
 const terminal = new Terminal();
@@ -17,7 +17,7 @@ export function listFiles() {
     // TODO: List Files Here & Return
 }
 
-export function conformInput(handler: readline.Interface, prompt: string): any {
+export function conformInput(prompt: string): any {
     let answer: string | Array<string> = '';
     let negated = false;
     let once = false;
@@ -27,12 +27,11 @@ export function conformInput(handler: readline.Interface, prompt: string): any {
             prompt = warning.toString() + prompt;
             once = true;
         }
-        handler.question(prompt, ans => {
-            answer = ans;
-            if (!prompt.length && !answer.length) {
-                negated = true;
-            }
-        });
+        answer = readline.question(prompt);
+
+        if (!prompt.length && !answer.length) {
+            negated = true;
+        }
     }
 }
 
