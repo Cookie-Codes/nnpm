@@ -34,7 +34,7 @@ rl.question('homepage', answer=>{
   storage.version = answer;
 });
 
-rl.question('version', answer=>{
+rl.question('bugs', answer=>{
   storage.version = answer;
 });
 
@@ -59,7 +59,7 @@ rl.question('version', answer=>{
 :
 :
 :
-bugs:
+:
 license:
 author:
 files: []
