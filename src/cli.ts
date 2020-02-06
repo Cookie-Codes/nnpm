@@ -62,7 +62,7 @@ rl.question(askString('bugs', defualts.keywords)'bin', answer => {
     storage.version = answer;
 });
 
-rl.question(askString('bugs', defualts.keywords)'repository', answer => {
+rl.question(askString('repository', defualts.keywords), answer => {
     storage.version = answer;
 });
 
