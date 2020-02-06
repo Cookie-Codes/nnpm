@@ -21,8 +21,9 @@ export function conformInput(prompt: string, defaults?: any): any {
     let answer: string | Array<string> = '';
     let negated = false;
     let once = false;
-    prompt = prompt + ' :';
+
     prompt = askString(prompt, defaults);
+    prompt = prompt + ' :';
 
     while (!answer.length) {
         if (!!negated && !once) {
