@@ -8,7 +8,7 @@ export function listFiles() {
     // TODO: List Files Here & Return
 }
 
-export function conformInput(handler: readline.Interface, prompt: string, defaultValue: any) {}
+export function conformInput(handler: readline.Interface, prompt: string) {}
 
 export function getDefaults(): any {
     let values: any = {};
