@@ -17,7 +17,7 @@ export function listFiles() {
     // TODO: List Files Here & Return
 }
 
-export function conformInput(prompt: string): any {
+export function conformInput(prompt: string, defaults?: any): any {
     let answer: string | Array<string> = '';
     let negated = false;
     let once = false;
@@ -29,7 +29,7 @@ export function conformInput(prompt: string): any {
         }
         answer = readline.question(prompt);
 
-        if (!prompt.length && !answer.length) {
+        if (!defaults.length && !answer.length) {
             negated = true;
         }
     }
