@@ -1,8 +1,6 @@
 #!/usr/bin/env node
 import { conformInput, getDefaults, listFiles, dirname, writepackage } from './util';
-
 const defualts = getDefaults();
-
 const storage: any = {};
 
 storage.name = conformInput('name', !defualts.name ? dirname() : defualts.name);
@@ -17,10 +15,9 @@ storage.author = conformInput('author', !defualts.author ? storage.repository.sp
 storage.files = conformInput('files', !defualts.files ? listFiles() : defualts.files);
 storage.build = conformInput('build Directory', 'lib');
 storage.main = conformInput('main', !defualts.main ? storage.build + '/index.js' : defualts.main);
-// TODO: add yes no handler
-// TODO: add recursive bin handlers
+
+storage.bin_name = conformInput('bin executable name');
 storage.bin = conformInput('bin', defualts.bin);
-// Setting configs;
 
 defualts.name = storage.name;
 defualts.version = storage.version;
