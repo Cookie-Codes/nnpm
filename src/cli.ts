@@ -7,6 +7,7 @@ storage.name = conformInput('name', !defualts.name ? dirname() : defualts.name);
 storage.version = conformInput('version', !defualts.version ? '0.0.1' : defualts.version);
 storage.desc = conformInput('description', defualts.description);
 storage.repository = conformInput('repository', defualts.repository);
+// handle array
 storage.keywords = conformInput('keywords (space seperated)', !defualts.keywords ? [] : defualts.keywords);
 storage.homepage = conformInput('homepage', !defualts.homepage ? storage.repository : defualts.homepage);
 storage.bugs = conformInput('bugs', !defualts.bugs ? storage.repository + '/issues' : defualts.bugs);
@@ -21,7 +22,7 @@ const yesn = !!defualts.bin ? false : yesNo('is This Cli Application(Specify y o
 if (yesn) {
     const storage: any = {};
     const name = conformInput('bin executable name');
-    const file = conformInput('bin', defualts.bin);
+    const file = conformInput('bin file', defualts.bin);
     storage[name + ''] = file;
     storage.bin = storage;
     defualts.bin = storage.bin;
