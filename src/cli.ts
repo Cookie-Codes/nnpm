@@ -46,11 +46,11 @@ rl.question(askString('bugs', defualts.keywords)'author', answer => {
     storage.version = answer;
 });
 
-rl.question(askString('bugs', defualts.keywords)'files: []', answer => {
+rl.question(askString('files', defualts.keywords), answer => {
     storage.version = answer;
 });
 
-rl.question(askString('bugs', defualts.keywords)'version', answer => {
+rl.question(askString('version', defualts.keywords), answer => {
     storage.version = answer;
 });
 
