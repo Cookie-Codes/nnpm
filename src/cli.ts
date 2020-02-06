@@ -27,9 +27,9 @@ if (yesn) {
     defualts.bin;
 }
 
-const yes_n_type = yesNo('Do you use TypeScript');
+const yesnType = yesNo('Do you use TypeScript');
 
-if (yes_n_type) {
+if (yesnType) {
     storage.types = conformInput('main', !defualts.main ? storage.build + '/index.d.ts' : defualts.main);
 }
 
