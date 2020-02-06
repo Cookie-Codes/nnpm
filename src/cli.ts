@@ -30,7 +30,8 @@ if (yesn) {
 const yesnType = yesNo('Do you use TypeScript(Specify y or n) : ');
 
 if (yesnType) {
-    storage.types = conformInput('main', !defualts.main ? storage.build + '/index.d.ts' : defualts.main);
+    storage.types = conformInput('main', !defualts.types ? storage.build + '/index.d.ts' : defualts.types);
+    defualts.types = storage.types;
 }
 
 defualts.name = storage.name;
