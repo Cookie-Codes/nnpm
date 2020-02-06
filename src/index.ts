@@ -18,3 +18,7 @@
  * dependencies:
  * devDependencies:
  */
+
+function packageExist() {
+    // TODO: Check if Package Exists
+}
