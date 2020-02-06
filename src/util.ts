@@ -1,4 +1,4 @@
-import { readFileSync } from 'fs';
+import { readFileSync, existsSync } from 'fs';
 import * as readline from 'readline-sync';
 import { Terminal } from 'tscolor';
 
@@ -9,13 +9,10 @@ const warning = terminal
     .withhex('#ff0000');
 
 export function packageExist(): boolean {
-    // TODO: Check if Package Exists
-    return true;
+    return existsSync('package.json');
 }
 
-export function listFiles() {
-    // TODO: List Files Here & Return
-}
+export function listFiles() {}
 
 export function conformInput(prompt: string, defaults?: any): any {
     let answer: string | Array<string> = '';
