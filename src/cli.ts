@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { conformInput, getDefaults, listFiles, dirname, writepackage, yesNo } from './util';
+import { conformInput, getDefaults, listFiles, dirname, writepackage, yesNo, keywordSolver } from './util';
 const defualts = getDefaults();
 const storage: any = {};
 
@@ -37,11 +37,7 @@ defualts.name = storage.name;
 defualts.version = storage.version;
 defualts.description = storage.desc;
 defualts.repository = storage.repository;
-defualts.keywords = !defualts.keywords
-    ? storage.keywords == []
-        ? []
-        : storage.keywords.split(' ')
-    : defualts.keywords;
+defualts.keywords = keywordSolver(storage.keywords);
 defualts.homepage = storage.homepage;
 defualts.bugs = storage.bugs;
 defualts.license = storage.license;
