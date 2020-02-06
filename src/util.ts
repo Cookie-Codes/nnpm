@@ -10,6 +10,7 @@ const warning = terminal
 
 export function packageExist(): boolean {
     // TODO: Check if Package Exists
+    return true;
 }
 
 export function listFiles() {
