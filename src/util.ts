@@ -58,3 +58,8 @@ export function askString(question: string, defualt?: string): string {
         return question;
     }
 }
+
+export function dirname() {
+    const dirs = process.cwd().split('/');
+    return dirs[dirs.length - 1];
+}
