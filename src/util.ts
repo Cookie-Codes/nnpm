@@ -12,7 +12,7 @@ export function getDefaults() {
     // TODO: Get Default values
 }
 
-export function askString(question: string, defualt = ''): string {
+export function askString(question: string, defualt?: string): string {
     if (!!defualt) {
         return question + `[${defualt}]`;
     } else {
