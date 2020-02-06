@@ -1,6 +1,6 @@
 {
     "name": "cinit",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "nnpm way of npm init kind of slightly verbose",
     "main": "build/index.js",
     "keywords": [
