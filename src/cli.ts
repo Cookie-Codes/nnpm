@@ -26,7 +26,7 @@ rl.question(askString('description', defualts.version), answer => {
     storage.version = answer;
 });
 
-rl.question(askString('keywords []', defualts.version),, answer => {
+rl.question(askString('keywords []', defualts.version), answer => {
     storage.version = answer;
 });
 
