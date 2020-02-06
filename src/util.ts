@@ -61,7 +61,6 @@ export function conformInput(prompt: string, defaults?: any): any {
             once = true;
         }
         answer = readline.question(prompt);
-        console.log(answer);
 
         if (!answer.length && !!defaults) {
             return defaults;
