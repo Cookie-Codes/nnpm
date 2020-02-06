@@ -1,5 +1,5 @@
 {
-    "name": "ainit",
+    "name": "cinit",
     "version": "1.0.0",
     "description": "nnpm way of npm init kind of slightly verbose",
     "main": "build/index.js",

@@ -1,4 +1,4 @@
-# ainit
+# cinit
 
 A Little More Verbse npm init which will Create better package.json file for
 Production Level Packages.
@@ -15,7 +15,7 @@ For new existing package.json
 Installation:
 
 ```bash
-npm i -g ainit
+npm i -g cinit
 ```
 
 [![nnpm gif](https://media.giphy.com/media/duEXHKHpGbCzKyZNfU/giphy.gif)](https://youtu.be/nvem5o5NkyY)
