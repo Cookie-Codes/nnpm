@@ -31,7 +31,7 @@ export function yesNo(prompt: string) {
 
         if (answer === 'y') {
             return true;
-        } else if (answer == 'n') {
+        } else if (answer === 'n') {
             return false;
         } else {
             negated = true;
