@@ -24,7 +24,7 @@ if (yesn) {
     const file = conformInput('bin', defualts.bin);
     storage[name + ''] = file;
     storage.bin = storage;
-    defualts.bin;
+    defualts.bin = storage.bin;
 }
 
 const yesnType = yesNo('Do you use TypeScript(Specify y or n) : ');
@@ -37,13 +37,12 @@ defualts.name = storage.name;
 defualts.version = storage.version;
 defualts.description = storage.desc;
 defualts.repository = storage.repository;
-defualts.keywords = storage.keywords.split(' ');
+defualts.keywords = !defualts.keywords ? storage.keywords.split(' ') : defualts.keywords;
 defualts.homepage = storage.homepage;
 defualts.bugs = storage.bugs;
 defualts.license = storage.license;
 defualts.author = storage.author;
 defualts.files = storage.files;
 defualts.main = storage.main;
-defualts.bin = storage.bin;
 
 writepackage(defualts);
