@@ -38,7 +38,11 @@ defualts.name = storage.name;
 defualts.version = storage.version;
 defualts.description = storage.desc;
 defualts.repository = storage.repository;
-defualts.keywords = !defualts.keywords ? storage.keywords.split(' ') : defualts.keywords;
+defualts.keywords = !defualts.keywords
+    ? storage.keywords === []
+        ? []
+        : storage.keywords.split(' ')
+    : defualts.keywords;
 defualts.homepage = storage.homepage;
 defualts.bugs = storage.bugs;
 defualts.license = storage.license;
