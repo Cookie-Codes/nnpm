@@ -18,54 +18,54 @@ rl.question(askString('name', defualts.name), answer => {
     storage.name = answer;
 });
 
-rl.question(askString('version', defualts), answer => {
+rl.question(askString('version', defualts.version), answer => {
     storage.version = answer;
 });
 
-rl.question(askString('description', defualts.version), answer => {
+rl.question(askString('description', defualts.description), answer => {
     storage.version = answer;
 });
 
-rl.question(askString('keywords []', defualts.version), answer => {
+rl.question(askString('keywords []', defualts.keywords), answer => {
     storage.version = answer;
 });
 
-rl.question(askString('homepage', defualts.keywords), answer => {
+rl.question(askString('homepage', defualts.homepage), answer => {
     storage.version = answer;
 });
 
-rl.question(askString('bugs', defualts.keywords), answer => {
+rl.question(askString('bugs', defualts.bugs), answer => {
     storage.version = answer;
 });
 
-rl.question(askString('license', defualts.keywords), answer => {
+rl.question(askString('license', defualts.license), answer => {
     storage.version = answer;
 });
 
-rl.question(askString('author', defualts.keywords), answer => {
+rl.question(askString('author', defualts.author), answer => {
     storage.version = answer;
 });
 
-rl.question(askString('files []', defualts.keywords), answer => {
+rl.question(askString('files []', defualts.files), answer => {
     storage.version = answer;
 });
 
-rl.question(askString('version', defualts.keywords), answer => {
+rl.question(askString('version', defualts.version), answer => {
     storage.version = answer;
 });
 
-rl.question(askString('main | browser', defualts.keywords), answer => {
+rl.question(askString('main | browser', defualts.main_browser), answer => {
     storage.version = answer;
 });
 
-rl.question(askString('bin', defualts.keywords), answer => {
+rl.question(askString('bin', defualts.bin), answer => {
     storage.version = answer;
 });
 
-rl.question(askString('repository', defualts.keywords), answer => {
+rl.question(askString('repository', defualts.repository), answer => {
     storage.version = answer;
 });
 
-rl.question(askString('config', defualts.keywords), answer => {
+rl.question(askString('config', defualts.config), answer => {
     storage.version = answer;
 });
