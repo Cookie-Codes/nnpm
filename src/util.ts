@@ -43,7 +43,7 @@ export function yesNo(prompt: string) {
             return false;
         } else {
             negated = true;
-            prompt = prompt + '(specify y or n)';
+            prompt = prompt;
         }
     }
 }
